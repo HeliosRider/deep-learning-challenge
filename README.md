@@ -34,16 +34,15 @@ Results: Using bulleted lists and images to support your answers, address the fo
    - INCOME_AMT	
    - SPECIAL_CONSIDERATIONS	
    - ASK_AMT
-
 3. What variable(s) should be removed from the input data because they are neither targets nor features?
+   -EIN, Name, AFFILIATION, ORGANIZATION, and SPECIAL_CONSIDERATIONS
 
 ## Compiling, Training, and Evaluating the Model
-The results of the initial bianry classification model yielded the following accuracy and loss results: Accuracy: 0.7331 /  Loss: 0.5480
+The results of the initial bianry classification model yielded the following accuracy and loss results: 
+Accuracy: 0.7244 /  Loss: 0.5568
 
-Model and  Plots
-- Initial structure model (See image folder)
-- Plot of the initial model accuracy data (See image folder)
-- Plot of the initial model loss data (See image folder)
+Model and Plots
+- See Sequential_Run in image folder
 
 1. How many neurons, layers, and activation functions did you select for your neural network model, and why?
 - Number of neurons: 10, layers: 3, and activation function: ReLU and sigmoid 
@@ -60,8 +59,49 @@ Model and  Plots
 ## optimizization of the model 
 The goal of the optimization is to to achieve a target predictive accuracy higher than 75%.
 
-1. What steps did you take in your attempts to increase model performance?
-2. Were you able to achieve the target model performance?
+# First run (Optimization_Sequential_Run_1)
+   1. The results of the bianry classification model yielded the following accuracy and loss results: 
+      Accuracy: 0.7311 /  Loss: 0.5506
+
+   2. Model Structure and Plots
+      - See Optimization_Sequential_Run_1 in image folder
+
+   3. What steps did you take in your attempts to increase model performance?
+      - Removed variables, EIN, Name, and Special considerations from the features
+
+   4. Were you able to achieve the target model performance?
+      - The model failed to achieve target predictive accuracy of higher than 75%
+
+# Second run (Optimization_Sequential_Run_2)
+   1. The results of the bianry classification model yielded the following accuracy and loss results: 
+      Accuracy: 0.6293 /  Loss: 0.6365
+
+   2. Model Structure and Plots
+      - See Optimization_Sequential_Run_2 in image folder
+
+   3. What steps did you take in your attempts to increase model performance?
+      - Removed variables,EIN, Name, Affiliation and Organization from the features
+
+   4. Were you able to achieve the target model performance?
+       - The model failed to achieve target predictive accuracy of higher than 75%
+
+# Third run (Optimization_Sequential_Run_3)
+   1. The results of the bianry classification model yielded the following accuracy and loss results: 
+      Accuracy: 0.7285 /  Loss: 0.5537
+
+   2. Model Structure and Plots
+      - See Optimization_Sequential_Run_3 in image folder
+
+   3. What steps did you take in your attempts to increase model performance?
+      - Removed variables,EIN and Name from the features
+      - replaced hidden layer Relu wiht Sigmoid
+
+   4. Were you able to achieve the target model performance?
+      - The model failed to achieve target predictive accuracy of higher than 75%
 
 ## Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
 
+   Three attempts were made to achieve an accuracy score of higher than 75%. Hyperparameter optimization failed 
+   to achieve the target predictive accuracy objective. All model attempts failed to surpass 73%.  
+   Based on the results of the current model, it is my recommendation is to contemplate using another classification model
+   to achieve better predictive results to assess whether applicants will be successful if funded by Alphabet Soup.
