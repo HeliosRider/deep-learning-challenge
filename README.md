@@ -103,5 +103,5 @@ The goal of the optimization is to to achieve a target predictive accuracy highe
 
    Three attempts were made to achieve an accuracy score of higher than 75%. Hyperparameter optimization failed 
    to achieve the target predictive accuracy objective. All model attempts failed to surpass 73%.  
-   Based on the results of the current model, it is my recommendation is for Alphabet Soup to contemplate using another classification model
+   Based on the results of the current model, my recommendation to Alphabet Soup is to contemplate using another classification model
    to achieve better predictive results to assess whether applicants will be successful if funded by the company.
